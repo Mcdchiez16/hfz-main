@@ -30,8 +30,8 @@
   <meta property="twitter:image" content="https://hfz.org.zm/og-image.png" />
 
   <!-- Favicon Reference -->
-  <link rel="icon" type="image/png" href="/og-image.png" />
-  <link rel="apple-touch-icon" href="/og-image.png" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/favicon.png" />
 
   <script src="https://cdn.tailwindcss.com"></script>
   <link
@@ -48,11 +48,11 @@
           },
           colors: {
             navy:     '#111111', // Primary Dark / Black
-            brand:    '#F97316', // Primary Red
-            accent:   '#F97316', // Orange Accent
-            'brand-dark': '#c2410c', // Dark Red (hover)
-            cyan:     '#F97316', // Alias → orange so old refs auto-update
-            blue:     '#F97316', // Alias → red so old refs auto-update
+            brand:    'var(--brand-color, #F97316)', // Primary Color (Dynamic)
+            accent:   'var(--brand-color, #F97316)', // Accent Color (Dynamic)
+            'brand-dark': 'var(--brand-color-dark, #c2410c)', // Dark variant (hover)
+            cyan:     'var(--brand-color, #F97316)', // Alias
+            blue:     'var(--brand-color, #F97316)', // Alias
             grey: '#C7CBCA',
             white: '#FFFFFF',
             slate: {
@@ -112,7 +112,7 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="/assets/index-BypPV23M.js"></script>
+  <script type="module" crossorigin src="/assets/index-BS1Q699V.js"></script>
   <link rel="stylesheet" crossorigin href="/assets/index-aS7tUugy.css">
 </head>
 
